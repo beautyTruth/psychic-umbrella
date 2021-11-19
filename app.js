@@ -38,5 +38,8 @@ keyContainers.forEach((key) => {
     // console.log(e.path);
     // console.log(e.path[0]);
     // console.log(e.path[0].value);
+
+    let keyClicked = e.path[0].value.toLowerCase();
+    textArea.value += keyClicked;
   });
 });
