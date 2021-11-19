@@ -24,3 +24,19 @@
 /*
 my code
 */
+
+const keyContainers = document.querySelectorAll(".keys");
+let textArea = document.querySelector(".display textarea");
+// console.log(keyContainers);
+// console.log(keyContainers[0]);
+// console.log(keyContainers[0].children);
+
+keyContainers.forEach((key) => {
+  key.addEventListener("click", (e) => {
+    if (!e.path[0].value) return;
+    // console.log(e);
+    // console.log(e.path);
+    // console.log(e.path[0]);
+    // console.log(e.path[0].value);
+  });
+});
